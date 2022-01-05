@@ -45,7 +45,7 @@ router.delete('/user/:id', deleteUser);
 
 router.get('/profile', auth, getProfile);
 
-router.get('/products', auth, getProducts);
+router.get('/products', getProducts);
 router.get('/product/:id', auth, getProduct);
 router.post('/product', auth, uploadFile('image'), addProduct);
 router.patch('/product/:id', auth, uploadFile('image'), updateProduct);
